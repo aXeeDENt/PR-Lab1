@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  lab1:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./site:/srv:ro
+    command: ["8000","/srv"]
